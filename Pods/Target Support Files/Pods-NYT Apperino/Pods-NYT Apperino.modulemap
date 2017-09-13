@@ -1,0 +1,6 @@
+framework module Pods_NYT_Apperino {
+  umbrella header "Pods-NYT Apperino-umbrella.h"
+
+  export *
+  module * { export * }
+}

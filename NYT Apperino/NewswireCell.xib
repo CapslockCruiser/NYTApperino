@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newswireCellReuseID" rowHeight="161" id="w2l-On-lQr" customClass="NewswireCell" customModule="NYT_Apperino" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w2l-On-lQr" id="L2c-sE-2SG">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vmt-c8-yCK">
+                        <rect key="frame" x="8" y="8" width="359" height="144.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kru-8b-Alo">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewswireTabIcon" translatesAutoresizingMaskIntoConstraints="NO" id="f9k-Tm-Roe">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="40" id="n3D-Ch-Duv"/>
+                                            <constraint firstAttribute="width" secondItem="f9k-Tm-Roe" secondAttribute="height" multiplier="1:1" id="tAJ-sO-zug"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjC-y9-lMm">
+                                        <rect key="frame" x="48" y="0.0" width="263" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld5-xH-wNT">
+                                        <rect key="frame" x="319" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ld5-xH-wNT" secondAttribute="height" multiplier="1:1" id="N4r-RV-s18"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <state key="normal" title="&gt;"/>
+                                        <connections>
+                                            <action selector="moreInfoButtonPressed:" destination="w2l-On-lQr" eventType="touchUpInside" id="7q6-pf-pCu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX3-Kl-4RK">
+                                <rect key="frame" x="0.0" y="48" width="359" height="96.5"/>
+                                <string key="text">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vmt-c8-yCK" firstAttribute="leading" secondItem="L2c-sE-2SG" secondAttribute="leading" constant="8" id="ALK-73-qAv"/>
+                    <constraint firstAttribute="bottom" secondItem="Vmt-c8-yCK" secondAttribute="bottom" constant="8" id="e9B-nT-wsT"/>
+                    <constraint firstItem="Vmt-c8-yCK" firstAttribute="top" secondItem="L2c-sE-2SG" secondAttribute="top" constant="8" id="ghg-yM-26F"/>
+                    <constraint firstAttribute="trailing" secondItem="Vmt-c8-yCK" secondAttribute="trailing" constant="8" id="lxh-ss-yHf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="abstractLabel" destination="AX3-Kl-4RK" id="lhT-rR-Jx5"/>
+                <outlet property="thumbnailImageView" destination="f9k-Tm-Roe" id="Kvi-vF-sTM"/>
+                <outlet property="titleLabel" destination="GjC-y9-lMm" id="G5M-A5-Dje"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="29.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NewswireTabIcon" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F7A019DDAB79E8F9276B0C /* Pods_NYT_ApperinoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3BEF1D71EA76ABADAE80F1 /* Pods_NYT_ApperinoTests.framework */; };
+		3D0FC7B31F51DC460014AA5E /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FC7B21F51DC460014AA5E /* WebView.storyboard */; };
+		3D0FC7B51F53502A0014AA5E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FC7B41F53502A0014AA5E /* WebViewViewController.swift */; };
+		3D6FB07D1F48E8B600695D2A /* NewswireItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6FB07C1F48E8B600695D2A /* NewswireItem.swift */; };
+		3D6FB07F1F48E8C000695D2A /* NewswireCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6FB07E1F48E8C000695D2A /* NewswireCategory.swift */; };
+		3D6FB0811F48EA1F00695D2A /* TopStoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6FB0801F48EA1F00695D2A /* TopStoriesItem.swift */; };
+		3D859D081F3D5EE3003F41A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D071F3D5EE3003F41A9 /* AppDelegate.swift */; };
+		3D859D121F3D5EE3003F41A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D859D111F3D5EE3003F41A9 /* Assets.xcassets */; };
+		3D859D151F3D5EE3003F41A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D859D131F3D5EE3003F41A9 /* LaunchScreen.storyboard */; };
+		3D859D201F3D5EE4003F41A9 /* NYT_ApperinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D1F1F3D5EE4003F41A9 /* NYT_ApperinoTests.swift */; };
+		3D859D2B1F3D5EE4003F41A9 /* NYT_ApperinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D2A1F3D5EE4003F41A9 /* NYT_ApperinoUITests.swift */; };
+		3D859D3E1F3D60BA003F41A9 /* CWRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D3D1F3D60BA003F41A9 /* CWRootViewController.swift */; };
+		3D859D411F3D66CD003F41A9 /* NewswireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D401F3D66CC003F41A9 /* NewswireVC.swift */; };
+		3D859D431F3D66DA003F41A9 /* TopStoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D421F3D66DA003F41A9 /* TopStoriesVC.swift */; };
+		3D859D461F3D6708003F41A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D451F3D6708003F41A9 /* Constants.swift */; };
+		3D859D481F3D671B003F41A9 /* NYTAPICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D471F3D671B003F41A9 /* NYTAPICoordinator.swift */; };
+		3D859D4A1F3D6820003F41A9 /* SavedItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D491F3D6820003F41A9 /* SavedItemsVC.swift */; };
+		3D859D4C1F3E51D3003F41A9 /* NYTAPIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D4B1F3E51D3003F41A9 /* NYTAPIKeys.swift */; };
+		3D859D5A1F3FF51C003F41A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859D591F3FF51C003F41A9 /* BaseViewController.swift */; };
+		3DD93A391F49446000DF86C0 /* NewswireCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD93A381F49446000DF86C0 /* NewswireCell.xib */; };
+		3DF086B11F40E66D004812F1 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF086B01F40E66D004812F1 /* ImageManager.swift */; };
+		71EDA9EDF9930A6A4EC3FF58 /* Pods_NYT_Apperino.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA017EA2CFA9DF9532EE2A8A /* Pods_NYT_Apperino.framework */; };
+		8B1C794BEA0CEE3BF1DDC11E /* Pods_NYT_ApperinoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144E4B4C339100CC310217B7 /* Pods_NYT_ApperinoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D859D1C1F3D5EE4003F41A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D859CFC1F3D5EE3003F41A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D859D031F3D5EE3003F41A9;
+			remoteInfo = "NYT Apperino";
+		};
+		3D859D271F3D5EE4003F41A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D859CFC1F3D5EE3003F41A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D859D031F3D5EE3003F41A9;
+			remoteInfo = "NYT Apperino";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		144E4B4C339100CC310217B7 /* Pods_NYT_ApperinoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYT_ApperinoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0FC7B21F51DC460014AA5E /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		3D0FC7B41F53502A0014AA5E /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		3D6FB07C1F48E8B600695D2A /* NewswireItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewswireItem.swift; sourceTree = "<group>"; };
+		3D6FB07E1F48E8C000695D2A /* NewswireCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewswireCategory.swift; sourceTree = "<group>"; };
+		3D6FB0801F48EA1F00695D2A /* TopStoriesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoriesItem.swift; sourceTree = "<group>"; };
+		3D859D041F3D5EE3003F41A9 /* NYT Apperino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYT Apperino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D859D071F3D5EE3003F41A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D859D111F3D5EE3003F41A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D859D141F3D5EE3003F41A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D859D161F3D5EE3003F41A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D859D1B1F3D5EE4003F41A9 /* NYT ApperinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYT ApperinoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D859D1F1F3D5EE4003F41A9 /* NYT_ApperinoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYT_ApperinoTests.swift; sourceTree = "<group>"; };
+		3D859D211F3D5EE4003F41A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D859D261F3D5EE4003F41A9 /* NYT ApperinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYT ApperinoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D859D2A1F3D5EE4003F41A9 /* NYT_ApperinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYT_ApperinoUITests.swift; sourceTree = "<group>"; };
+		3D859D2C1F3D5EE4003F41A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D859D3D1F3D60BA003F41A9 /* CWRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWRootViewController.swift; sourceTree = "<group>"; };
+		3D859D401F3D66CC003F41A9 /* NewswireVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewswireVC.swift; sourceTree = "<group>"; };
+		3D859D421F3D66DA003F41A9 /* TopStoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoriesVC.swift; sourceTree = "<group>"; };
+		3D859D451F3D6708003F41A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3D859D471F3D671B003F41A9 /* NYTAPICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYTAPICoordinator.swift; sourceTree = "<group>"; };
+		3D859D491F3D6820003F41A9 /* SavedItemsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedItemsVC.swift; sourceTree = "<group>"; };
+		3D859D4B1F3E51D3003F41A9 /* NYTAPIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NYTAPIKeys.swift; sourceTree = "<group>"; };
+		3D859D591F3FF51C003F41A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3DD93A381F49446000DF86C0 /* NewswireCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewswireCell.xib; sourceTree = "<group>"; };
+		3DF086B01F40E66D004812F1 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		51A163C5C109DF75DF1DA841 /* Pods-NYT ApperinoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT ApperinoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYT ApperinoUITests/Pods-NYT ApperinoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB565463FCE49BB4A63B06A /* Pods-NYT ApperinoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT ApperinoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYT ApperinoTests/Pods-NYT ApperinoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C26D22709BCBFF8AD085D4B /* Pods-NYT Apperino.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT Apperino.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYT Apperino/Pods-NYT Apperino.debug.xcconfig"; sourceTree = "<group>"; };
+		9167C42718F4042062D071F6 /* Pods-NYT ApperinoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT ApperinoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYT ApperinoUITests/Pods-NYT ApperinoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF3BEF1D71EA76ABADAE80F1 /* Pods_NYT_ApperinoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYT_ApperinoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA017EA2CFA9DF9532EE2A8A /* Pods_NYT_Apperino.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYT_Apperino.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D512E55B33E0BCC70CFA025A /* Pods-NYT ApperinoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT ApperinoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYT ApperinoTests/Pods-NYT ApperinoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8B1ACA5C66849849D1EC5E3 /* Pods-NYT Apperino.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYT Apperino.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYT Apperino/Pods-NYT Apperino.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D859D011F3D5EE3003F41A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71EDA9EDF9930A6A4EC3FF58 /* Pods_NYT_Apperino.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D181F3D5EE4003F41A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F7A019DDAB79E8F9276B0C /* Pods_NYT_ApperinoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D231F3D5EE4003F41A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1C794BEA0CEE3BF1DDC11E /* Pods_NYT_ApperinoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE9DEC21EB4FBEC25BA9D59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C26D22709BCBFF8AD085D4B /* Pods-NYT Apperino.debug.xcconfig */,
+				F8B1ACA5C66849849D1EC5E3 /* Pods-NYT Apperino.release.xcconfig */,
+				D512E55B33E0BCC70CFA025A /* Pods-NYT ApperinoTests.debug.xcconfig */,
+				6AB565463FCE49BB4A63B06A /* Pods-NYT ApperinoTests.release.xcconfig */,
+				51A163C5C109DF75DF1DA841 /* Pods-NYT ApperinoUITests.debug.xcconfig */,
+				9167C42718F4042062D071F6 /* Pods-NYT ApperinoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D859CFB1F3D5EE3003F41A9 = {
+			isa = PBXGroup;
+			children = (
+				3D859D061F3D5EE3003F41A9 /* NYT Apperino */,
+				3D859D1E1F3D5EE4003F41A9 /* NYT ApperinoTests */,
+				3D859D291F3D5EE4003F41A9 /* NYT ApperinoUITests */,
+				3D859D051F3D5EE3003F41A9 /* Products */,
+				0CE9DEC21EB4FBEC25BA9D59 /* Pods */,
+				6D952E60595E955FA835F5D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D859D051F3D5EE3003F41A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D041F3D5EE3003F41A9 /* NYT Apperino.app */,
+				3D859D1B1F3D5EE4003F41A9 /* NYT ApperinoTests.xctest */,
+				3D859D261F3D5EE4003F41A9 /* NYT ApperinoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D859D061F3D5EE3003F41A9 /* NYT Apperino */ = {
+			isa = PBXGroup;
+			children = (
+				3DD93A371F49444300DF86C0 /* Views */,
+				3D859D581F3FD0AE003F41A9 /* Models */,
+				3D859D441F3D66FE003F41A9 /* Helpers */,
+				3D859D3F1F3D66B2003F41A9 /* ViewControllers */,
+				3D859D381F3D5F0F003F41A9 /* BaseClasses */,
+				3D859D071F3D5EE3003F41A9 /* AppDelegate.swift */,
+				3D859D111F3D5EE3003F41A9 /* Assets.xcassets */,
+				3D859D131F3D5EE3003F41A9 /* LaunchScreen.storyboard */,
+				3D859D161F3D5EE3003F41A9 /* Info.plist */,
+			);
+			path = "NYT Apperino";
+			sourceTree = "<group>";
+		};
+		3D859D1E1F3D5EE4003F41A9 /* NYT ApperinoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D1F1F3D5EE4003F41A9 /* NYT_ApperinoTests.swift */,
+				3D859D211F3D5EE4003F41A9 /* Info.plist */,
+			);
+			path = "NYT ApperinoTests";
+			sourceTree = "<group>";
+		};
+		3D859D291F3D5EE4003F41A9 /* NYT ApperinoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D2A1F3D5EE4003F41A9 /* NYT_ApperinoUITests.swift */,
+				3D859D2C1F3D5EE4003F41A9 /* Info.plist */,
+			);
+			path = "NYT ApperinoUITests";
+			sourceTree = "<group>";
+		};
+		3D859D381F3D5F0F003F41A9 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D3D1F3D60BA003F41A9 /* CWRootViewController.swift */,
+			);
+			name = BaseClasses;
+			sourceTree = "<group>";
+		};
+		3D859D3F1F3D66B2003F41A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D401F3D66CC003F41A9 /* NewswireVC.swift */,
+				3D859D421F3D66DA003F41A9 /* TopStoriesVC.swift */,
+				3D859D491F3D6820003F41A9 /* SavedItemsVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D859D441F3D66FE003F41A9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D859D451F3D6708003F41A9 /* Constants.swift */,
+				3D859D471F3D671B003F41A9 /* NYTAPICoordinator.swift */,
+				3D859D4B1F3E51D3003F41A9 /* NYTAPIKeys.swift */,
+				3D859D591F3FF51C003F41A9 /* BaseViewController.swift */,
+				3DF086B01F40E66D004812F1 /* ImageManager.swift */,
+				3D0FC7B41F53502A0014AA5E /* WebViewViewController.swift */,
+				3D0FC7B21F51DC460014AA5E /* WebView.storyboard */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		3D859D581F3FD0AE003F41A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D6FB07C1F48E8B600695D2A /* NewswireItem.swift */,
+				3D6FB07E1F48E8C000695D2A /* NewswireCategory.swift */,
+				3D6FB0801F48EA1F00695D2A /* TopStoriesItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3DD93A371F49444300DF86C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DD93A381F49446000DF86C0 /* NewswireCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6D952E60595E955FA835F5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA017EA2CFA9DF9532EE2A8A /* Pods_NYT_Apperino.framework */,
+				AF3BEF1D71EA76ABADAE80F1 /* Pods_NYT_ApperinoTests.framework */,
+				144E4B4C339100CC310217B7 /* Pods_NYT_ApperinoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D859D031F3D5EE3003F41A9 /* NYT Apperino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D859D2F1F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT Apperino" */;
+			buildPhases = (
+				4E1435335CE437B8B02C7C94 /* [CP] Check Pods Manifest.lock */,
+				3D859D001F3D5EE3003F41A9 /* Sources */,
+				3D859D011F3D5EE3003F41A9 /* Frameworks */,
+				3D859D021F3D5EE3003F41A9 /* Resources */,
+				B107D213FBBC0371A5A93E8F /* [CP] Embed Pods Frameworks */,
+				513A6683502D6D39AEDAD515 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYT Apperino";
+			productName = "NYT Apperino";
+			productReference = 3D859D041F3D5EE3003F41A9 /* NYT Apperino.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D859D1A1F3D5EE4003F41A9 /* NYT ApperinoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D859D321F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT ApperinoTests" */;
+			buildPhases = (
+				9DB09B6444A0C5C9D7AB7B19 /* [CP] Check Pods Manifest.lock */,
+				3D859D171F3D5EE4003F41A9 /* Sources */,
+				3D859D181F3D5EE4003F41A9 /* Frameworks */,
+				3D859D191F3D5EE4003F41A9 /* Resources */,
+				6B2192288C9EC1D107043F2C /* [CP] Embed Pods Frameworks */,
+				2009012F8779A65E5F3780A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D859D1D1F3D5EE4003F41A9 /* PBXTargetDependency */,
+			);
+			name = "NYT ApperinoTests";
+			productName = "NYT ApperinoTests";
+			productReference = 3D859D1B1F3D5EE4003F41A9 /* NYT ApperinoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D859D251F3D5EE4003F41A9 /* NYT ApperinoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D859D351F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT ApperinoUITests" */;
+			buildPhases = (
+				3A53C60A80E58DA96B28FDC3 /* [CP] Check Pods Manifest.lock */,
+				3D859D221F3D5EE4003F41A9 /* Sources */,
+				3D859D231F3D5EE4003F41A9 /* Frameworks */,
+				3D859D241F3D5EE4003F41A9 /* Resources */,
+				0BB9C1F5D37599309F734021 /* [CP] Embed Pods Frameworks */,
+				F4AFD610BEAD29EEB7151C8B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D859D281F3D5EE4003F41A9 /* PBXTargetDependency */,
+			);
+			name = "NYT ApperinoUITests";
+			productName = "NYT ApperinoUITests";
+			productReference = 3D859D261F3D5EE4003F41A9 /* NYT ApperinoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D859CFC1F3D5EE3003F41A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = choiw;
+				TargetAttributes = {
+					3D859D031F3D5EE3003F41A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5SZP8SN2M;
+						ProvisioningStyle = Automatic;
+					};
+					3D859D1A1F3D5EE4003F41A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5SZP8SN2M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D859D031F3D5EE3003F41A9;
+					};
+					3D859D251F3D5EE4003F41A9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R5SZP8SN2M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D859D031F3D5EE3003F41A9;
+					};
+				};
+			};
+			buildConfigurationList = 3D859CFF1F3D5EE3003F41A9 /* Build configuration list for PBXProject "NYT Apperino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D859CFB1F3D5EE3003F41A9;
+			productRefGroup = 3D859D051F3D5EE3003F41A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D859D031F3D5EE3003F41A9 /* NYT Apperino */,
+				3D859D1A1F3D5EE4003F41A9 /* NYT ApperinoTests */,
+				3D859D251F3D5EE4003F41A9 /* NYT ApperinoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D859D021F3D5EE3003F41A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D859D151F3D5EE3003F41A9 /* LaunchScreen.storyboard in Resources */,
+				3D859D121F3D5EE3003F41A9 /* Assets.xcassets in Resources */,
+				3D0FC7B31F51DC460014AA5E /* WebView.storyboard in Resources */,
+				3DD93A391F49446000DF86C0 /* NewswireCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D191F3D5EE4003F41A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D241F3D5EE4003F41A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB9C1F5D37599309F734021 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT ApperinoUITests/Pods-NYT ApperinoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2009012F8779A65E5F3780A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT ApperinoTests/Pods-NYT ApperinoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A53C60A80E58DA96B28FDC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1435335CE437B8B02C7C94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		513A6683502D6D39AEDAD515 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT Apperino/Pods-NYT Apperino-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2192288C9EC1D107043F2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT ApperinoTests/Pods-NYT ApperinoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB09B6444A0C5C9D7AB7B19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B107D213FBBC0371A5A93E8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT Apperino/Pods-NYT Apperino-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4AFD610BEAD29EEB7151C8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYT ApperinoUITests/Pods-NYT ApperinoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D859D001F3D5EE3003F41A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0FC7B51F53502A0014AA5E /* WebViewViewController.swift in Sources */,
+				3D859D431F3D66DA003F41A9 /* TopStoriesVC.swift in Sources */,
+				3D859D5A1F3FF51C003F41A9 /* BaseViewController.swift in Sources */,
+				3D859D4C1F3E51D3003F41A9 /* NYTAPIKeys.swift in Sources */,
+				3D859D081F3D5EE3003F41A9 /* AppDelegate.swift in Sources */,
+				3D859D4A1F3D6820003F41A9 /* SavedItemsVC.swift in Sources */,
+				3D859D481F3D671B003F41A9 /* NYTAPICoordinator.swift in Sources */,
+				3D6FB0811F48EA1F00695D2A /* TopStoriesItem.swift in Sources */,
+				3D859D3E1F3D60BA003F41A9 /* CWRootViewController.swift in Sources */,
+				3D6FB07D1F48E8B600695D2A /* NewswireItem.swift in Sources */,
+				3DF086B11F40E66D004812F1 /* ImageManager.swift in Sources */,
+				3D859D461F3D6708003F41A9 /* Constants.swift in Sources */,
+				3D859D411F3D66CD003F41A9 /* NewswireVC.swift in Sources */,
+				3D6FB07F1F48E8C000695D2A /* NewswireCategory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D171F3D5EE4003F41A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D859D201F3D5EE4003F41A9 /* NYT_ApperinoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D859D221F3D5EE4003F41A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D859D2B1F3D5EE4003F41A9 /* NYT_ApperinoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D859D1D1F3D5EE4003F41A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D859D031F3D5EE3003F41A9 /* NYT Apperino */;
+			targetProxy = 3D859D1C1F3D5EE4003F41A9 /* PBXContainerItemProxy */;
+		};
+		3D859D281F3D5EE4003F41A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D859D031F3D5EE3003F41A9 /* NYT Apperino */;
+			targetProxy = 3D859D271F3D5EE4003F41A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D859D131F3D5EE3003F41A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D859D141F3D5EE3003F41A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D859D2D1F3D5EE4003F41A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D859D2E1F3D5EE4003F41A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D859D301F3D5EE4003F41A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C26D22709BCBFF8AD085D4B /* Pods-NYT Apperino.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT Apperino/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-Apperino";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3D859D311F3D5EE4003F41A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B1ACA5C66849849D1EC5E3 /* Pods-NYT Apperino.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT Apperino/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-Apperino";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3D859D331F3D5EE4003F41A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D512E55B33E0BCC70CFA025A /* Pods-NYT ApperinoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT ApperinoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-ApperinoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYT Apperino.app/NYT Apperino";
+			};
+			name = Debug;
+		};
+		3D859D341F3D5EE4003F41A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB565463FCE49BB4A63B06A /* Pods-NYT ApperinoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT ApperinoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-ApperinoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYT Apperino.app/NYT Apperino";
+			};
+			name = Release;
+		};
+		3D859D361F3D5EE4003F41A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A163C5C109DF75DF1DA841 /* Pods-NYT ApperinoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT ApperinoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-ApperinoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NYT Apperino";
+			};
+			name = Debug;
+		};
+		3D859D371F3D5EE4003F41A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9167C42718F4042062D071F6 /* Pods-NYT ApperinoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5SZP8SN2M;
+				INFOPLIST_FILE = "NYT ApperinoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.choiw.NYT-ApperinoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NYT Apperino";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D859CFF1F3D5EE3003F41A9 /* Build configuration list for PBXProject "NYT Apperino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D859D2D1F3D5EE4003F41A9 /* Debug */,
+				3D859D2E1F3D5EE4003F41A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D859D2F1F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT Apperino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D859D301F3D5EE4003F41A9 /* Debug */,
+				3D859D311F3D5EE4003F41A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D859D321F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT ApperinoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D859D331F3D5EE4003F41A9 /* Debug */,
+				3D859D341F3D5EE4003F41A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D859D351F3D5EE4003F41A9 /* Build configuration list for PBXNativeTarget "NYT ApperinoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D859D361F3D5EE4003F41A9 /* Debug */,
+				3D859D371F3D5EE4003F41A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D859CFC1F3D5EE3003F41A9 /* Project object */;
+}
